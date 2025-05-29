@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import InputField from './InputField';
-import Button from './Button';
+import InputField from './InputField.jsx';
+import Button from './Button.jsx';
 
 interface SettingsModalProps {
   isOpen: boolean;

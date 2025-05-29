@@ -1,5 +1,6 @@
 {
   "name": "GitHub README Generator",
   "description": "An application to generate professional README.md files for your GitHub projects. Features AI-powered content suggestions via OpenRouter (user-provided API key required).",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "prompt": ""
 }

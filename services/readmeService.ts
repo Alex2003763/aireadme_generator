@@ -1,4 +1,3 @@
-
 import { ReadmeData } from '../types';
 
 const generateSection = (title: string, content?: string | string[], listAs?: 'bullet' | 'numbered' | 'none' | 'code'): string => {

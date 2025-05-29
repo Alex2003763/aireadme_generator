@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import Button from './Button'; // Assuming Button component exists
+import Button from './Button.jsx'; // Assuming Button component exists
 
 interface ArrayInputFieldProps {
   id: string;

@@ -1,20 +1,20 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { ReadmeData, SectionKey, GithubRepoInfo, AiGeneratedSections, SelectOption } from './types';
-import { generateReadmeContent } from './services/readmeService';
-import { generateDescriptionWithAI, generateReadmeSectionsFromCodeWithAI } from './services/openRouterService';
-import { fetchProjectDetails } from './services/githubService';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import SectionCard from './components/SectionCard';
-import InputField from './components/InputField';
-import TextAreaField from './components/TextAreaField';
-import ArrayInputField from './components/ArrayInputField';
-import SelectField from './components/SelectField';
-import Button from './components/Button';
-import GeneratedPreview from './components/GeneratedPreview';
-import Spinner from './components/Spinner';
-import SettingsModal from './components/SettingsModal';
-import { DEFAULT_README_DATA, SECTIONS_CONFIG } from './constants';
+import { generateReadmeContent } from './services/readmeService.js';
+import { generateDescriptionWithAI, generateReadmeSectionsFromCodeWithAI } from './services/openRouterService.js';
+import { fetchProjectDetails } from './services/githubService.js';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import SectionCard from './components/SectionCard.jsx';
+import InputField from './components/InputField.jsx';
+import TextAreaField from './components/TextAreaField.jsx';
+import ArrayInputField from './components/ArrayInputField.jsx';
+import SelectField from './components/SelectField.jsx';
+import Button from './components/Button.jsx';
+import GeneratedPreview from './components/GeneratedPreview.jsx';
+import Spinner from './components/Spinner.jsx';
+import SettingsModal from './components/SettingsModal.jsx';
+import { DEFAULT_README_DATA, SECTIONS_CONFIG } from './constants.js';
 
 const OPENROUTER_API_KEY_LS = 'openRouterApiKey';
 
