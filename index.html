@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub README Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for webkit browsers */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #2d3748; /* Slightly lighter track for slate-800 */
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4a5568; /* Slightly lighter thumb */
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #718096; /* Lighter hover */
+    }
+    /* Basic body styling for better aesthetics with Tailwind */
+    body {
+      font-family: 'Inter', sans-serif; /* A common, clean font often used with Tailwind */
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    /* Styling for react-markdown output */
+    .markdown-preview h1, .markdown-preview h2, .markdown-preview h3 {
+      border-bottom: 1px solid #4a5568;
+      padding-bottom: 0.3em;
+    }
+    .markdown-preview code {
+      background-color: #2d3748 !important; /* Ensure high contrast for code blocks */
+      color: #e2e8f0 !important;
+      padding: 0.2em 0.4em !important;
+      margin: 0 !important;
+      font-size: 85% !important;
+      border-radius: 6px !important;
+    }
+    .markdown-preview pre > code {
+       padding: 0 !important; /* Reset padding for code inside pre */
+       background-color: transparent !important; /* Pre will handle background */
+       border-radius: 0 !important;
+    }
+    .markdown-preview pre {
+      background-color: #1e293b !important; /* Darker background for pre */
+      padding: 16px !important;
+      overflow: auto !important;
+      border-radius: 6px !important;
+      border: 1px solid #334155;
+    }
+    .markdown-preview table {
+      border-collapse: collapse;
+    }
+    .markdown-preview th, .markdown-preview td {
+      border: 1px solid #4a5568;
+      padding: 6px 13px;
+    }
+    .markdown-preview tr {
+      background-color: #2d3748;
+      border-top: 1px solid #4a5568;
+    }
+    .markdown-preview tr:nth-child(2n) {
+      background-color: #1e293b;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.0",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.2.0"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-800 text-slate-100">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
